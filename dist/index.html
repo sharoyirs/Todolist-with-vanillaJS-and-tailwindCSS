@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todolist with Vanilla javscript and TailwindCSS</title>
+		<link rel="stylesheet" href="output.css" />
+	</head>
+	<body
+		class="flex flex-col items-center mt- bg-gradient-to-r from-blue-300 to-blue-800 mt-5"
+	>
+		<h1 class="text-4xl mb-8 text-white font-bold">TODOLIST with vanilla JS and Tailwind</h1>
+		<div
+			id="todolist"
+			class="bg-gradient-to-tr from-purple-900 to-purple-300 px-16 py-5 shadow-xl border-2 border-white rounded-md"
+		>
+			<div id="input-list" class="flex border-4 rounded-md mb-5">
+				<input
+					type="text"
+					id="typeinfield"
+					class="w-[300px] bg-transparent h-10 outline-none box-border pl-2 font-bold text-white text-lg text-wrap"
+				/>
+				<button
+					id="btn-add"
+					class="px-5 bg-gradient-to-r from-blue-500 to-blue-800 border-l-4 text-orange-500 text-4xl flex items-center justify-cente transition-all ease-linear hover:bg-blue-50"
+				>
+					+
+				</button>
+			</div>
+			<ul id="list-section"></ul>
+		</div>
+		<script src="../script.js"></script>
+	</body>
+</html>
